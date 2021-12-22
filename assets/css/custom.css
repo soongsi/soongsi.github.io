@@ -60,8 +60,13 @@ a{
   text-align: center;   
 }
 .about-title{
+    font-family: 'Noto Serif KR', serif;
     font-size: 3rem;
     font-weight: 700;
+}
+.about-desc {
+    margin: 10px 0;
+    color: #2e2e2e;
 }
 .about-social{
     margin-top:2rem;
