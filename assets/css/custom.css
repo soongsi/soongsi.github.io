@@ -78,6 +78,12 @@ a{
      display: inline;
      padding:0rem 2rem;
 }
+
+.profile img {
+  border-radius: 50%;
+  width: 40%;
+}
+
 .copyright{
     text-align: center;
     padding:0rem 2rem 3rem 2rem;
