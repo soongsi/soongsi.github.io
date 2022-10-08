@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR&display=swap');
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 98.3vh; */
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    flex: 1;
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#clock {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 4px 4px #333;
+}
+
+#today {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+#weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 100%;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin: 0 10px;
+}
+
+#weather span:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#weather span:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
