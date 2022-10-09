@@ -1,4 +1,6 @@
-const clock = document.querySelector("#clock");
+const clock = document.querySelector("#clock span:first-child");
+const seconds = document.querySelector("#second");
+const noon = document.querySelector("#noon");
 const today = document.querySelector("#today");
 
 const dayText = ["일", "월", "화", "수", "목", "금", "토"];
@@ -8,10 +10,26 @@ getDate();
 
 function getClock() {
     const myDate = new Date();
-    const hour = String(myDate.getHours()).padStart(2, "0");
+    let hour;
+    let _noon;
+
+    if ( myDate.getHours() > 12 ) {
+        hour = String(myDate.getHours() % 12).padStart(2, "0");
+        _noon = 'PM';
+    } else {
+        hour = String(myDate.getHours()).padStart(2, "0");
+        _noon = 'AM';
+    }
+
     const minute = String(myDate.getMinutes()).padStart(2, "0");
     const second = String(myDate.getSeconds()).padStart(2, "0");
-    clock.innerText = `${hour}:${minute}:${second}`;
+    clock.innerText = `${hour}:${minute}`;
+    seconds.innerText = `${second}`;
+    noon.innerText = `${_noon}`;
+
+    if ( hour === "00" && minute === "00" && second === "00" ) {
+        getDate();
+    }
 }
 
 function getDate() {
