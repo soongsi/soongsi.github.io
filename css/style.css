@@ -37,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 3;
 }
 
 #clock {
@@ -86,6 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 2;
 }
 
 form {
